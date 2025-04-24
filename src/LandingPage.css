@@ -1,0 +1,227 @@
+/* General */
+.landing-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3748; /* Color oscuro para el texto principal en modo claro */
+  transition: color 0.3s, background-color 0.3s; /* Suave transición para cambios de color */
+}
+
+body.dark {
+  background-color: #1a202c; /* Fondo gris oscuro */
+  color: #edf2f7; /* Blanco para el texto */
+}
+
+body.light {
+  background-color: #f7fafc; /* Fondo blanco para el modo claro */
+  color: #2d3748; /* Texto oscuro para el modo claro */
+}
+
+.dark-mode {
+  background-color: #1a202c;
+  color: #edf2f7;
+}
+
+.light-mode {
+  background-color: #f7fafc; /* Fondo blanco */
+  color: #2d3748; /* Texto oscuro */
+}
+
+/* Header */
+.landing-header {
+  background-color: #2d3748; /* Gris oscuro para el header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-header.light {
+  background-color: #edf2f7; /* Fondo blanco para el header en modo claro */
+  color: #2d3748; /* Texto oscuro */
+}
+
+.landing-logo {
+  color: #4A90E2; /* Azul suave para el logo */
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.landing-nav .nav-link {
+  margin-left: 1rem;
+  color: #edf2f7; /* Texto claro para los enlaces */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.landing-nav .nav-link:hover {
+  color: #4A90E2; /* Azul claro para el hover */
+}
+
+.landing-header.light .landing-nav .nav-link {
+  color: #2d3748; /* Texto oscuro para los enlaces en el modo claro */
+}
+
+/* Modo oscuro toggle */
+.toggle-dark {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #edf2f7; /* Blanco para el texto */
+}
+
+.dark-mode .toggle-dark {
+  color: #edf2f7; /* Blanco en modo oscuro */
+}
+
+.light-mode .toggle-dark {
+  color: #2d3748; /* Texto oscuro en modo claro */
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #4A5568; /* Gris medio para el fondo */
+  color: #edf2f7;
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
+
+.hero-section.light {
+  background-color: #e2e8f0; /* Gris claro para el fondo en modo claro */
+  color: #2d3748; /* Texto oscuro */
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  background-color: #edf2f7; /* Blanco para el botón */
+  color: #4A90E2; /* Azul para el texto del botón */
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.hero-button:hover {
+  background-color: #e2e8f0; /* Gris claro para el hover */
+}
+
+/* Secciones */
+.about-section,
+.services-section,
+.contact-section {
+  padding: 4rem 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.section-description {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+/* Servicios */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background-color: #2d3748; /* Gris oscuro para las tarjetas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #edf2f7; /* Blanco para los títulos */
+}
+
+.service-card.light {
+  background-color: #edf2f7; /* Fondo blanco para las tarjetas en modo claro */
+  color: #2d3748; /* Texto oscuro para las tarjetas en modo claro */
+}
+
+.service-title.light {
+  color: #2d3748; /* Títulos oscuros en modo claro */
+}
+
+/* Contacto */
+.contact-button-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.contact-button {
+  background-color: #edf2f7;
+  color: #4A90E2;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+  background-color: #e2e8f0;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d3748; /* Gris oscuro para el footer */
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #4a5568; /* Gris medio para la línea superior */
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #718096; /* Gris claro para el texto */
+}
+
+.footer.light {
+  background-color: #edf2f7; /* Fondo blanco para el footer en modo claro */
+  color: #2d3748; /* Texto oscuro para el footer en modo claro */
+}
+
+.dark-mode .footer {
+  background-color: #1a202c;
+  color: #edf2f7;
+  border-color: #4a5568;
+}
