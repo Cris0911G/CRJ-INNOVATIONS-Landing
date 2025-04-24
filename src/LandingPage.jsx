@@ -63,7 +63,7 @@ export default function LandingPage() {
         <h3 className="section-title">Contacto</h3>
         <p className="section-description">¿Listo para trabajar con nosotros? ¡Escríbenos!</p>
         <div className="contact-button-container">
-          <a href="mailto:contacto@crjinnovations.com" className="contact-button">contacto@crjinnovations.com</a>
+          <a href="mailto:crjinnovations@gmail.com" className="contact-button">crjinnovations@gmail.com</a>
         </div>
       </section>
 

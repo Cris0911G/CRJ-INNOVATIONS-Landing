@@ -154,8 +154,10 @@ body.light {
   }
 }
 
+/* Aquí no se cambia el fondo ni el color para los recuadros de servicio */
 .service-card {
-  background-color: #2d3748; /* Gris oscuro para las tarjetas */
+  background-color: #4A5568; /* Gris medio constante para las tarjetas */
+  color: #edf2f7; /* Blanco para el texto dentro de las tarjetas */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves */
   padding: 2rem;
   border-radius: 1rem;
@@ -174,12 +176,12 @@ body.light {
 }
 
 .service-card.light {
-  background-color: #edf2f7; /* Fondo blanco para las tarjetas en modo claro */
-  color: #2d3748; /* Texto oscuro para las tarjetas en modo claro */
+  /* Aquí no cambiamos el fondo o color en modo claro */
+  color: #edf2f7; /* Blanco para el texto en modo claro */
 }
 
 .service-title.light {
-  color: #2d3748; /* Títulos oscuros en modo claro */
+  color: #edf2f7; /* Blanco para los títulos en modo claro */
 }
 
 /* Contacto */
