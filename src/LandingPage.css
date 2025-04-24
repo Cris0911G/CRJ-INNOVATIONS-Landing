@@ -225,3 +225,40 @@ body.light {
   color: #edf2f7;
   border-color: #4a5568;
 }
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .landing-header,
+  .hero-section,
+  .services-section,
+  .about-section,
+  .contact-section,
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Solo una columna en dispositivos pequeños */
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+}
